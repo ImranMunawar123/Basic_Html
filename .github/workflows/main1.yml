@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Basic_html
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -31,7 +31,7 @@ jobs:
          
       run:  npm install -g surge 
     - name: Run Surge 
-      run: surge ./ Html_323.surge.sh --token ${{ secrets.Surge_token }}
+      run: surge ./ basic_html.surge.sh --token ${{ secrets.Surge_token }}
         
           
 
